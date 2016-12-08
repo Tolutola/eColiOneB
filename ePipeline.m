@@ -25,7 +25,7 @@ load Data1a
 [EnergyData,EnergyLabels]= computeEnergyParameters(v,model,smallest);
 
 %Task #B compute flux ratios
-[FluxRatioData,RatioLabels]= computeFluxRatios(v);
+[FluxRatioData,RatioLabels]= computeFluxRatios(v,model);
 
 %Task #C PCA analysis
 
