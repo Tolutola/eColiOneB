@@ -13,6 +13,7 @@ for i=1:size(v,2)
         %#1 Flux into glycolysis
         mmets=find(strcmp(model.mets,'g6p_c'));
         num=find(strcmp(model.rxns,'PGI'));
+        
         FluxRatioData(i,1) = RatioCalc( mmets,[],num,v,model.S,i );
        
 
@@ -67,5 +68,4 @@ for i=1:size(v,2)
         disp(i)
         
 end
-
 FluxRatioData= array2table(FluxRatioData,'VariableNames',RatioLabels);
